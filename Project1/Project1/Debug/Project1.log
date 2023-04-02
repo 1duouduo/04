@@ -1,0 +1,32 @@
+﻿  查找.cpp
+D:\新建文件夹\Project1\Project1\查找.cpp(16,6): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+D:\新建文件夹\Project1\Project1\查找.cpp(16,6): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\新建文件夹\Project1\Project1\查找.cpp(16,20): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\新建文件夹\Project1\Project1\查找.cpp(16,8): error C2365: “Search”: 重定义；以前的定义是“函数”
+D:\新建文件夹\Project1\Project1\查找.cpp(7): message : 参见“Search”的声明
+D:\新建文件夹\Project1\Project1\查找.cpp(16,22): error C2065: “head”: 未声明的标识符
+D:\新建文件夹\Project1\Project1\查找.cpp(16,28): error C2062: 意外的类型“int”
+D:\新建文件夹\Project1\Project1\查找.cpp(17,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\新建文件夹\Project1\Project1\查找.cpp(17,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\新建文件夹\Project1\Project1\查找.cpp(53,7): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+D:\新建文件夹\Project1\Project1\查找.cpp(53,7): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\新建文件夹\Project1\Project1\查找.cpp(53,25): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\新建文件夹\Project1\Project1\查找.cpp(53,27): error C2065: “p”: 未声明的标识符
+D:\新建文件夹\Project1\Project1\查找.cpp(53,30): error C2062: 意外的类型“int”
+D:\新建文件夹\Project1\Project1\查找.cpp(54,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\新建文件夹\Project1\Project1\查找.cpp(54,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\新建文件夹\Project1\Project1\查找.cpp(67,7): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+D:\新建文件夹\Project1\Project1\查找.cpp(67,7): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\新建文件夹\Project1\Project1\查找.cpp(67,1): error C2086: “int BTNode”: 重定义
+D:\新建文件夹\Project1\Project1\查找.cpp(53): message : 参见“BTNode”的声明
+D:\新建文件夹\Project1\Project1\查找.cpp(67,25): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\新建文件夹\Project1\Project1\查找.cpp(67,9): error C2374: “BSTSearch”: 重定义；多次初始化
+D:\新建文件夹\Project1\Project1\查找.cpp(53): message : 参见“BSTSearch”的声明
+D:\新建文件夹\Project1\Project1\查找.cpp(67,27): error C2065: “p”: 未声明的标识符
+D:\新建文件夹\Project1\Project1\查找.cpp(67,30): error C2062: 意外的类型“int”
+D:\新建文件夹\Project1\Project1\查找.cpp(68,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\新建文件夹\Project1\Project1\查找.cpp(68,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\新建文件夹\Project1\Project1\查找.cpp(82,24): error C2065: “p”: 未声明的标识符
+D:\新建文件夹\Project1\Project1\查找.cpp(82,27): error C2062: 意外的类型“int”
+D:\新建文件夹\Project1\Project1\查找.cpp(83,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\新建文件夹\Project1\Project1\查找.cpp(83,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
