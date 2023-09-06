@@ -2,8 +2,8 @@
 using namespace std;
 #define maxSize
 #define MIN
-//²åÈëºÍÉ¾³ı
-//1.ÔªËØ²åÈëË³Ğò±í
+//æ’å…¥å’Œåˆ é™¤
+//1.å…ƒç´ æ’å…¥é¡ºåºè¡¨
 int insertElem(int sqList[], int& length, int p, int e)
 {
 	if (p<0 || p>length || length == maxSize)
@@ -18,7 +18,7 @@ int insertElem(int sqList[], int& length, int p, int e)
 	length++;
 	return 1;
 }
-//2.Ë³Ğò±íÔªËØÉ¾³ı
+//2.é¡ºåºè¡¨å…ƒç´ åˆ é™¤
 int deleteElem(int sqList[], int& length, int p, int& e)
 {
 	if (p<0 || p>length - 1)
@@ -32,11 +32,11 @@ int deleteElem(int sqList[], int& length, int p, int& e)
 	return 1;
 }
 
-//½¨±í
-//1.Ë³Ğò±í
+//å»ºè¡¨
+//1.é¡ºåºè¡¨
 int A[maxSize];
 int length;
-int creat(int A[], int &length)
+int create(int A[], int &length)
 {
 	cin >> length;
 	if (length > maxSize)
@@ -45,8 +45,8 @@ int creat(int A[], int &length)
 		cin >> A[i];
 	return 1;
 }
-//2.Á´±í
-//(1)Î²²å·¨
+//2.é“¾è¡¨
+//(1)å°¾æ’æ³•
 void createLinkListR(LNode*& head)
 {
 	head = (LNode*)malloc(sizeof(LNode));
@@ -64,7 +64,7 @@ void createLinkListR(LNode*& head)
 		r = p;
 	}
 }
-//(2)Í·²å·¨
+//(2)å¤´æ’æ³•
 void createLinkListH(LNode*& head)
 {
 	head = (LNode*)malloc(sizeof(LNode));
@@ -81,15 +81,15 @@ void createLinkListH(LNode*& head)
 		head->next = p;
 	}
 }
-//ÄæÖÃ
-//1.Ë³Ğò±í
+//é€†ç½®
+//1.é¡ºåºè¡¨
 for (int i = left, j = right; i < j; i++; j--)
 {
 	temp = a[i];
 	a[i] = a[j];
 	a[j] = temp;
 }
-//2.Á´±í ÄæÖÃp->nextµ½qÖ®¼äµÄ½Úµã
+//2.é“¾è¡¨ é€†ç½®p->nextåˆ°qä¹‹é—´çš„èŠ‚ç‚¹
 while (p->next != q)
 {
 	t = p->next;
@@ -97,8 +97,8 @@ while (p->next != q)
 	t->next = q->next;
 	q->next = t;
 }
-//È¡×îÖµ
-//Ë³Ğò±í
+//å–æœ€å€¼
+//é¡ºåºè¡¨
 int max = a[0];
 int maxIdx = 0;
 for(int i = 0; i < n; i++)
@@ -109,7 +109,7 @@ for(int i = 0; i < n; i++)
 		maxIdx = i;
 	}
 }
-//Á´±í
+//é“¾è¡¨
 LNode* p, * q;
 int max = head->next->data;
 q = p = head->next;
@@ -122,8 +122,8 @@ while(p != NULL)
 	}
 	p = p->next;
 }
-//»®·Ö
-//ÒÔÊı×éÄÚÄ³Ò»ÊıÖµarr[k]ÎªÊàÖá
+//åˆ’åˆ†
+//ä»¥æ•°ç»„å†…æŸä¸€æ•°å€¼arr[k]ä¸ºæ¢è½´
 void partition(int arr[], int n,int k)
 {
 	int temp;
@@ -151,7 +151,7 @@ void partition(int arr[], int n,int k)
 	}
 	arr[i] = temp;
 }
-//µ¥¶ÀÌí¼ÓÊàÖá
+//å•ç‹¬æ·»åŠ æ¢è½´
 void partition(int arr[], int n, int comp)
 {
 	int temp;
@@ -176,8 +176,8 @@ void partition(int arr[], int n, int comp)
 	}
 	arr[i] = temp;
 }
-//¹é²¢
-//Ë³Ğò±í
+//å½’å¹¶
+//é¡ºåºè¡¨
 void mergearray(int a[], int m, int b[], int n, int c[])
 {
 	int i = 0, j = 0;
@@ -194,8 +194,8 @@ void mergearray(int a[], int m, int b[], int n, int c[])
 	while (j < m)
 		c[k++] = b[j++];
 }
-//Á´±í(Ä¬ÈÏÁ½ÌõÔ­Á´±íË³Ğò´ÓĞ¡µ½´óÅÅĞò£©
-//1.Á´±íÊıÖµÒÀ´Î´ÓĞ¡µ½´ó
+//é“¾è¡¨(é»˜è®¤ä¸¤æ¡åŸé“¾è¡¨é¡ºåºä»å°åˆ°å¤§æ’åºï¼‰
+//1.é“¾è¡¨æ•°å€¼ä¾æ¬¡ä»å°åˆ°å¤§
 void merge(LNode* A, LNode* B, LNode*& C)
 {
 	LNode* p = A->next;
@@ -225,7 +225,7 @@ void merge(LNode* A, LNode* B, LNode*& C)
 	if(q != NULL)
 		r->next = q;
 }
-//2.Á´±íÊıÖµÒÀ´Î´ÓĞ¡µ½´ó
+//2.é“¾è¡¨æ•°å€¼ä¾æ¬¡ä»å°åˆ°å¤§
 void mergeR(LNode* A, LNode* B, LNode*& C)
 {
 	LNode* p = A->next;
